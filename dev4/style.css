@@ -61,13 +61,18 @@ p {
 
 }
 
-.wrapper {
+#main {
     width: 608px;
     margin: 0 auto;
     overflow: hidden;
     background: #fff;
     padding: 16px;
 
+}
+
+.wrapper {
+    width: 640px;
+    margin: 0 auto;
 }
 
 .content:last-child {
@@ -91,3 +96,45 @@ p {
     border-left: none;
     border-right: 6px solid #e63c35;
 }
+
+#header{
+    width: 100%;
+    overflow: hidden;
+    background: #e63c35;
+    padding: 6px Opx;
+    
+}
+    
+
+#header h1{
+    float: left;
+    color: #f9f9f9;
+    margin-right: 48px;
+}
+
+nav{
+overflow: hidden;
+height: 50px;
+}
+
+nav li {
+list-style-type: none;
+float: left;
+margin-top: 2px;
+
+}
+
+nav a{
+font-size: 16px;
+display: block;
+text-decoration: none;
+color: #f9f9f9;
+margin: 14px 16px 0px;
+transition: all 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #f9f9f9;
+    font-size: 18px;
+}
+
