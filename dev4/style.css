@@ -102,7 +102,7 @@ p {
     overflow: hidden;
     background: #e63c35;
     padding: 6px Opx;
-    
+    position: fixed;
 }
     
 
@@ -176,4 +176,35 @@ nav a:hover {
     height: 500px;
     background-size: cover;
     margin-bottom: 32px;
+    padding-top: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
 }
+
+p.new {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #e63c35;
+    color: white;
+    text-align: center;
+    line-height: 65px;
+    font-size: 25px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+
+#content1 {
+    position: relative;
+}
+
+#content3 {
+    position: relative;
+}
+    
