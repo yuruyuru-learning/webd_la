@@ -5,7 +5,7 @@ html,body{
 }
 
 body{
-  background: #fff url() 0 0 no-repeat;
+  background: #fff url(himawari.png) 0 0 no-repeat;
   background-size: cover;
 }
 
@@ -22,7 +22,12 @@ h1{
 p{
   padding-top: 280px;
   text-align: center;
-  color: #333;
+  color: white;
 }
 
+h2{
+  padding-top: 280px;
+  text-align: center;
+  color: white;
+}
 
