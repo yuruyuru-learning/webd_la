@@ -1,22 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 body {
     width: 100%;
-    margin-left: 16px;
+    background: f9f9f9;
 }
 
-h1{
+.top-title {
     font-size: 36px;
     padding-left: 8px;
     margin-bottom: 16px;
     color: #555;
     font-weight: 400;
+    border-left: 6px solid #e63c35;
+    padding-right: 8px;
 }
 
-a{
+a.fbutton {
     margin-top: 16px;
     font-size: 16px;
     padding: 8px 32px;
@@ -28,12 +30,12 @@ a{
     transition: all 0.5s;
 }
 
-a:hover {
+a.fbutton:hover {
     background: #f9f9f9;
     color: #3b5998;
 }
 
-img{
+img {
     float: left;
 }
 
@@ -41,6 +43,51 @@ h2 {
     color: #e63c35;
 }
 
-p{
+p {
     margin-bottom: 16px;
+}
+
+.right-box {
+    float: left;
+    width: 288px;
+    margin-left: 18px;
+
+}
+
+.left-box {
+    float: left;
+    width: 288px;
+    margin-right: 18px;
+
+}
+
+.wrapper {
+    width: 608px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+    padding: 16px;
+
+}
+
+.content:last-child {
+    border-bottom: 0;
+}
+
+.content {
+    border-bottom: 1px solid #eee;
+    padding: 16px 0;
+    overflow: hidden;
+}
+
+#content2 .top-title{
+    text-align: right;
+    border-left: none;
+    border-right: 6px solid #e63c35;
+}
+
+#content4 .top-title{
+    text-align: right;
+    border-left: none;
+    border-right: 6px solid #e63c35;
 }
