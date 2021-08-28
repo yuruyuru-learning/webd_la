@@ -18,7 +18,7 @@ body {
     padding-right: 8px;
 }
 
-a.fbutton {
+/* a.fbutton {
     margin-top: 16px;
     font-size: 16px;
     padding: 8px 32px;
@@ -33,7 +33,7 @@ a.fbutton {
 a.fbutton:hover {
     background: #f9f9f9;
     color: #3b5998;
-}
+} */
 
 img {
     float: left;
@@ -85,52 +85,52 @@ p {
     overflow: hidden;
 }
 
-#content2 .top-title{
+#content2 .top-title {
     text-align: right;
     border-left: none;
     border-right: 6px solid #e63c35;
 }
 
-#content4 .top-title{
+#content4 .top-title {
     text-align: right;
     border-left: none;
     border-right: 6px solid #e63c35;
 }
 
-#header{
+#header {
     width: 100%;
     overflow: hidden;
     background: #e63c35;
     padding: 6px Opx;
     position: fixed;
 }
-    
 
-#header h1{
+
+#header h1 {
     float: left;
     color: #f9f9f9;
     margin-right: 48px;
 }
 
-nav{
-overflow: hidden;
-height: 50px;
+nav {
+    overflow: hidden;
+    height: 50px;
 }
 
 nav li {
-list-style-type: none;
-float: left;
-margin-top: 2px;
+    list-style-type: none;
+    float: left;
+    margin-top: 2px;
 
 }
 
-nav a{
-font-size: 16px;
-display: block;
-text-decoration: none;
-color: #f9f9f9;
-margin: 14px 16px 0px;
-transition: all 0.3s;
+nav a {
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    color: #f9f9f9;
+    margin: 14px 16px 0px;
+    transition: all 0.3s;
 }
 
 nav a:hover {
@@ -162,14 +162,15 @@ nav a:hover {
     margin-bottom: 16px;
 }
 
-#sidebar h3{
+#sidebar h3 {
     font-size: 26px;
     margin-bottom: 8px;
 }
-#sidebar p{
+
+#sidebar p {
     font-size: 16px;
 }
-    
+
 .main-visual {
     background: #fff url(himawari.png) 0 0 no-repeat;
     width: 100%;
@@ -207,4 +208,318 @@ p.new {
 #content3 {
     position: relative;
 }
-    
+
+.dissolve-animation {
+    position: relative;
+    width: 300px;
+    float: left;
+}
+
+#content1 .dissolve-animation .caption {
+    position: absolute;
+    padding: 20px;
+    background: #e63c35;
+    height: 160px;
+    width: 260px;
+
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    opacity: 0;
+}
+
+#content1 .dissolve-animation .caption h2 {
+    color: white;
+    font-size: 13px;
+}
+
+#content1 .dissolve-animation .caption h3 {
+    color: white;
+    font-size: 15px;
+}
+
+#content1 .dissolve-animation:hover .caption {
+    -webkit-transform: translate(8px, 8px);
+    -ms-transform: translate(8px, 8px);
+    -o-transform: translate(8px, 8px);
+    transform: translate(8px, 8px);
+
+    opacity: 1;
+}
+
+.flip-animation {
+    position: relative;
+    width: 300px;
+    float: left;
+
+    -moz-perspective: 500;
+    -webkit-perspective: 500;
+    -ms-perspective: 500;
+    perspective: 500;
+
+    -webkit-perspective-origin: left;
+    -moz-perspective-origin: left;
+    -ms-perspective-origin: left;
+    perspective-origin: left;
+}
+
+#content2 .flip-animation .caption {
+    position: absolute;
+    padding: 20px;
+    background: #e63c35;
+    height: 185px;
+    width: 100px;
+
+    opacity: 0;
+
+    -webkit-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+
+    -webkit-transition: transform 0.4s, opacity 0.1s, 0.3s;
+    -o-transition: transform 0.4s, opacity 0.1s, 0.3s;
+    transition: transform 0.4s, opacity 0.1s, 0.3s;
+
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+#content2 .flip-animation:hover .caption {
+    opacity: 1;
+
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+
+    -webkit-transition: transform 0.4s, opacity 0.1s;
+    -o-transition: transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+#content2 .flip-animation .caption h2 {
+    color: white;
+    font-size: 13px;
+}
+
+#content2 .flip-animation .caption h3 {
+    color: white;
+    font-size: 15px;
+}
+
+#content2 .flip-animation:hover img {
+    -webkit-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    -o-transform: translateX(25%);
+    transform: translateX(25%);
+}
+
+#content2 .flip-animation img {
+    -webkit-transform: translate 0.4s;
+    -o-transform: translate 0.4s;
+    transform: translate 0.4s;
+}
+
+#main a.fbutton {
+    font-size: 16px;
+    color: #3b5998;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 10px 30px;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+#main a.fbutton:active {
+    background-color: #3b5998;
+    color: white;
+}
+
+#main a.fbutton2 {
+    font-size: 16px;
+    color: orange;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 10px 30px;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+#main a.fbutton2:active {
+    background-color: orange;
+    color: white;
+}
+
+.fbutton .edge{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none repeat scroll 0 0 #3b5998;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.fbutton .edge1{
+    width: 1px;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    transition-delay: 0.2s;
+}
+
+.fbutton .edge2{
+    height: 1px;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.fbutton .edge3 {
+    width: 1px;
+    left: auto;
+    right: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    transition-delay: 0.2s;
+}
+
+.fbutton .edge4 {
+    height: 1px;
+    top: auto;
+    bottom: 0;
+    -webkit-transform: translate3d(-00%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.fbutton:hover .edge {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+.fbutton2 .edge{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none repeat scroll 0 0 orange;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.fbutton2 .edge1{
+    width: 1px;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    transition-delay: 0.2s;
+}
+
+.fbutton2 .edge2{
+    height: 1px;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.fbutton2 .edge3 {
+    width: 1px;
+    left: auto;
+    right: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    transition-delay: 0.2s;
+}
+
+.fbutton2 .edge4 {
+    height: 1px;
+    top: auto;
+    bottom: 0;
+    -webkit-transform: translate3d(-00%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.fbutton2:hover .edge {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+
+.over {
+    position: relative;
+    width: 300px;
+    float: left;
+}
+
+#content3 .over .caption {
+    position: absolute;
+    padding: 20px;
+    background: #e63c35;
+    height: 160px;
+    width: 260px;
+
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    opacity: 0;
+
+    -webkit-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    -o-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+}
+
+#content3 .over .caption h2 {
+    color: white;
+    font-size: 13px;
+}
+
+#content3 .over .caption h3 {
+    color: white;
+    font-size: 15px;
+}
+
+#content3 .over:hover .caption {
+    -webkit-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    -o-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+
+    opacity: 1;
+}
