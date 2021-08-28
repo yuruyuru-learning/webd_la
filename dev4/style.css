@@ -67,11 +67,11 @@ p {
     overflow: hidden;
     background: #fff;
     padding: 16px;
-
+    float: left;
 }
 
 .wrapper {
-    width: 640px;
+    width: 1400px;
     margin: 0 auto;
 }
 
@@ -138,3 +138,35 @@ nav a:hover {
     font-size: 18px;
 }
 
+#sidebar {
+    float: left;
+    width: 320px;
+    margin: 0px 12px;
+    background: #fff;
+    padding: 8px;
+}
+
+#sidebar img {
+    margin-bottom: 16px;
+}
+
+#sidebar2 {
+    float: left;
+    width: 280px;
+    margin: 0px 12px;
+    background: #fff;
+    padding: 8px;
+}
+
+#sidebar img {
+    margin-bottom: 16px;
+}
+
+#sidebar h3{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+#sidebar p{
+    font-size: 16px;
+}
+    
