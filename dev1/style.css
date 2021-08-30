@@ -31,3 +31,21 @@ h2{
   color: white;
 }
 
+a {
+  text-align: center;
+  display: block;
+  margin: 16px auto;
+  width: 180px;
+  color: #fff;
+  text-decoration: none;
+  border : 4px dotted #fff;
+  padding: 8px 0;
+  border-radius: 50%;
+  transition: all 0.8s;
+}
+
+a:hover {
+  background: #fff;
+  color: #000;
+}
+
