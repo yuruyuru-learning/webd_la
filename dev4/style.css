@@ -528,3 +528,8 @@ p.new {
 
     opacity: 1;
 }
+
+
+@media all and (max-width: 480px) {
+    
+}
